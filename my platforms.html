@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <link rel="icon" href="cc1a2b.ico" style="border-radius: 100%;">
         <title>cc1a2b platforms</title>
-   <!-- written by cc1a2b  -->
-
-    <style>
-
-   * {
+<link rel="stylesheet" href="./script.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script src="https://kit.fontawesome.com/26d4a64054.js"></script>
+<style>
+* {
 
         margin:0;
         padding: 0;
@@ -22,10 +22,54 @@
             position: relative;
             top: 8px;
         }
+        .profiledata{
+            padding: 20px;
+        }
+
+        .profile-name2 {
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 50px;
+            padding: 5px;
+        }
+
+
+
+        .profile-name3 {
+          color: gray;
+          font-family: sans-serif;
+          text-align: center;
+          font-size: 40px;
+        }
+        .profile-name3  span{
+          color: black;
+          font-weight: 500;
+        }
+        .profile-name4 {
+          color: gray;
+          font-family: sans-serif;
+          text-align: center;
+          font-size: 25px;
+        }
+        .profile-name4  span{
+          color: black;
+          font-weight: 500;
+        }
+
+        #linkedin {
+        height: 100px;
+        width: 700px;
+        background:linear-gradient(90deg, rgb(10, 102, 194), white,rgb(10, 102, 194));
+        border: solid  rgb(76, 85, 88 ) 2px;
+        box-shadow: 5px 5px 30px darkgray;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
 
         #gmail{
-        height: 35px;
-        width: 300px;
+        height: 100px;
+        width: 700px;
         background:linear-gradient(90deg, rgb(199,22,16 ),rgb(242,166,12 ),rgb(59,96,196 ),rgb(8,133,27), white,rgb(8,133,27 ),rgb(59,96,196 ),rgb(242,166,12 ),rgb(199,22,16));/*written by cc1a2b*/
         border: solid  rgb(76, 85, 88) 2px;
         box-shadow: 5px 5px 30px darkgray;
@@ -35,8 +79,8 @@
         margin-right: auto;}
 
         #telegram {
-        height: 35px;
-        width: 300px;
+        height: 100px;
+        width: 700px;
         background:linear-gradient(90deg, rgb(0, 180, 255), white,rgb(0, 180, 255));
         border: solid  rgb(76, 85, 88 ) 2px;
         box-shadow: 5px 5px 30px darkgray;
@@ -46,8 +90,8 @@
         margin-right: auto;}
 
         #github {
-        height: 35px;
-        width: 300px;
+        height: 100px;
+        width: 700px;
         background:linear-gradient(90deg, black, white,black);
         border: solid  rgb(76, 85, 88 ) 2px;
         box-shadow: 5px 5px 30px darkgray;
@@ -59,8 +103,8 @@
 
 
         #twitter{
-        height: 35px;
-        width: 300px;
+        height: 100px;
+        width: 700px;
         background:linear-gradient(90deg, rgb(0, 172, 238), white,rgb(0, 172, 238));
         border: solid  rgb(76, 85, 88) 2px;
         box-shadow: 5px 5px 30px darkgray;
@@ -72,8 +116,8 @@
         }/*written by cc1a2b*/
 
         #insta {
-        height: 35px;
-        width: 300px;
+        height: 100px;
+        width: 700px;
         background:linear-gradient(90deg, rgb(214, 12, 12 ),rgb(59, 12, 214 ),white, rgb(59, 12, 214 ),rgb(214, 12, 12 ));
         border: solid  rgb(76, 85, 88 ) 2px;
         box-shadow: 5px 5px 30px darkgray;
@@ -82,20 +126,10 @@
         margin-left: auto;
         margin-right: auto;}
 /*written by cc1a2b*/
-        #snapchat {
-        height: 35px;
-        width: 300px;
-        background:linear-gradient(90deg, rgb(255, 239, 0), white,rgb(255, 239, 0));
-        border: solid  rgb(76, 85, 88 ) 2px;
-        box-shadow: 5px 5px 30px darkgray;
-        border-radius: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;}
 
         #tiktok {
-        height: 35px;
-        width: 300px;
+        height: 100px;
+        width: 700px;
         background:linear-gradient(90deg, rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb( 0, 242, 234),rgb( 0, 242, 234),rgb( 255, 0, 80), white,rgb( 255, 0, 80),rgb( 0, 242, 234),rgb( 0, 242, 234),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0));
         border: solid  rgb(76, 85, 88 ) 2px;
         box-shadow: 5px 5px 30px darkgray;
@@ -104,13 +138,13 @@
         margin-left: auto;
         margin-right: auto;}
         #img1 {
-            width: 30px;
-            height: 30px;
+            width: 95px;
+            height: 95px;
             border-radius: 360px;}
 
         #img2 {
-            width: 120px;
-            height: 120px;
+            width: 200px;
+            height: 200px;
             border-radius: 360px;}/*written by cc1a2b*/
 
 
@@ -127,8 +161,8 @@
 
 }
 .form-container form{
-    height:600px;
-    width:400px;
+    height:1500px;
+    width:750px;
     background: rgba(300,300,300,0.2);
     text-align: center;
     align-items: center;
@@ -139,58 +173,63 @@
     backdrop-filter: blur(10px);
     transform-style: preserve-3d;
 }
-     /*written by cc1a2b*/
-
-</style>
-
-
+     /*written by cc1a2b*/</style>
 </head>
 <body><!-- written by cc1a2b  -->
 <div class="form-container">
 <form id="form" >
+
+<br>
 <br>
     <img src="cc1a2b.jpg" id="img2">
-<h2 style="color: rgba(255,255,255,0.9) ;text-shadow: 2px 2px 5px black;">Alhussien Alshorman</h2>
+    <div class="profiledata">
+        <div class="profile-name2"> Hussain Alsharman </div>
+        <div class="profile-name3"> And I'm <span class="typing"></span></div>
 
-<!-- written by cc1a2b  -->
+    </div>
 <br>
-<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hussienyam@gmail.com&body=Mr.+Alhussien+Alshorman" target="_blank" >
+<br>
+<!-- written by cc1a2b  -->
+    <div class="profile-name4"> And These are My accounts in  <span class="typing2"></span></div>
+<br>
+<a href="https://www.linkedin.com/in/hussain-alsharman-572948259" target="_blank">
+    <div type="submit" id="linkedin"><!-- written by cc1a2b  -->
+        <center>
+            <img src="linkedin.png" id="img1"></center>
+</a></div>
+            <br><br>
+<a href="mailto:cc1a2bb@gmail.com?body=Mr.%20Hussain%20Alsharman" target="_blank" >
     <div type="submit" id="gmail" >
         <center>
             <img src="gmail.png" id="img1"></center></a>
     </div>
 
 
-<br>
+<br><br>
 <a href="https://t.me/cc1a2b" target="_blank">
     <div type="submit" id="telegram"><!-- written by cc1a2b  -->
         <center>
             <img src="Telegram.png" id="img1"></center></a>
     </div>
-<br>
+<br><br>
   <a href="https://github.com/cc1a2b" target="_blank">
     <div type="submit" id="github">
         <center>
             <img src="github.png" id="img1"></center></a>
     </div>
-<br>
+<br><br>
 <a href="https://twitter.com/cc1a2b" target="_blank">
     <div type="submit" id="twitter"><!-- written by cc1a2b  -->
         <center>
             <img src="twitter.jpg" id="img1"></center>
     </div>
-<br>
+<br><br>
    <a href="https://www.instagram.com/cc1a2b" target="_blank">
     <div type="submit" id="insta">
         <center>
             <img src="insta.png" id="img1"></center></a>
     </div>
-<br>
-    <a href="https://www.snapchat.com/add/cc1a2b" target="_blank"><div type="submit" id="snapchat">
-        <center>
-            <img src="snap.jpg" id="img1"></center></a>
-    </div>
-<br>
+<br><br>
     <center> <a href="https://vm.tiktok.com/ZSde9UxvS/" target="_blank">
       <div type="submit" id="tiktok">
           <img src="tiktok.png" id="img1"></center></a>
@@ -198,24 +237,25 @@
 </form>
 
 </div>
-
 <script>
-//written by cc1a2b
-var form = document.getElementById('form');
-form.addEventListener('mousemove', (e) =>{
+var typed = new Typed(".typing", {
+        strings: ["Programmer","Developer", "Website Builder", "Designer", "Freelancer","cc1a2b"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        cursorChar: ' |',
+        smartBackspace: true,
+        loop: true
+    });
 
-var x = (window.innerWidth / 80 - e.pageX) / 100;
-var y = (window.innerHeight / 80 - e.pageY) / 100;
-form.style.transform = 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)';
-
-}); //written by cc1a2b
-
-form.addEventListener('mouseleave', function(){
-form.style.transform = 'rotateX(0deg) rotateY(0deg)';
-
-});
-
-</script>
+var typed = new Typed(".typing2", {
+        strings: ["Linkedin","Gmail", "Telegram", "Github", "Twitter","Instagram","Tiktok"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        cursorChar: ' |',
+        smartBackspace: true,
+        loop: true
+    });
+  </script>
 <!--written by cc1a2b -->
 </body>
 </html>
